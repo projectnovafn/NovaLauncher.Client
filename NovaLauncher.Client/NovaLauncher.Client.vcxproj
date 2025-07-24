@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\KismetDetoursLibrary.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\KismetMemoryLibrary.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Mods\EditingMod.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Mods\QuickBarMod.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Nova.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Patches\CameraUpdatePatch.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Patches\CrashPatch.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Patches\CurlHttpRequestPatch.cpp" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Mods.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Mods\EditingMod.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Mods\QuickBarMod.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Patches\CameraUpdatePatch.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Patches\CurlHttpRequestPatch.h">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Patches\FortEnginePatch.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Nova\Private\Patches\LinearPatch.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\Presidio\Private\Presidio.cpp" />
+    <ClCompile Include="Engine\Runtime\ApplicationCore\Private\Windows\WindowsConsoleOutputDevice.cpp" />
+    <ClCompile Include="Engine\Runtime\CoreUObject\Private\UObject\Class.cpp" />
+    <ClCompile Include="Engine\Runtime\CoreUObject\Private\UObject\Object.cpp" />
+    <ClCompile Include="Engine\Runtime\CoreUObject\Private\UObject\ScriptCore.cpp" />
+    <ClCompile Include="Engine\Runtime\CoreUObject\Private\UObject\SoftObjectPath.cpp" />
+    <ClCompile Include="Engine\Runtime\CoreUObject\Private\UObject\UObjectGlobals.cpp" />
+    <ClCompile Include="Engine\Runtime\CoreUObject\Private\UObject\WeakObjectPtr.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Algo\IntroSort.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Containers\UnrealString.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\GenericPlatform\GenericPlatformMisc.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\GenericPlatform\GenericPlatformProcess.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\GenericPlatform\GenericPlatformTime.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\HAL\PlatformMemory.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\HAL\PlatformTLS.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\HAL\ThreadingBase.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\HAL\ThreadSingleton.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\HAL\UnrealMemory.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Logging\LogCategory.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Logging\LogMacros.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Logging\LogVerbosity.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Math\Rotator.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Misc\OutputDeviceHelper.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\UObject\NameTypes.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Windows\WindowsPlatformMisc.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Windows\WindowsPlatformProcess.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Windows\WindowsPlatformTime.cpp" />
+    <ClCompile Include="Engine\Runtime\Core\Private\Windows\WindowsRunnableThread.cpp" />
+    <ClCompile Include="Engine\Runtime\Engine\Private\KismetSystemLibrary.cpp" />
+    <ClCompile Include="Engine\Runtime\FortniteGame\Private\FortEngine.cpp" />
+    <ClCompile Include="Engine\Runtime\FortniteGame\Private\Inventory\FortQuickBars.cpp" />
+    <ClCompile Include="Engine\Runtime\FortniteGame\Private\Player\FortPlayerController.cpp" />
+    <ClCompile Include="Engine\Runtime\FortniteGame\Private\ItemDefinitions\FortItem.cpp" />
+    <ClCompile Include="Engine\Runtime\Launch\Private\Launch.cpp" />
+    <ClCompile Include="Engine\Runtime\Launch\Private\Windows\LaunchWindows.cpp" />
+    <ClCompile Include="Engine\Runtime\Online\HTTP\Private\Curl\CurlHttp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\KismetDetoursLibrary.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\KismetMemoryLibrary.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Nova.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Patches.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Patches\CrashPatch.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Patches\FortEnginePatch.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Nova\Public\Patches\LinearPatch.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\Presidio\Public\Presidio.h" />
+    <ClInclude Include="Engine\Runtime\ApplicationCore\Public\Windows\WindowsConsoleOutputDevice.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\CoreUObject.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\Class.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\Object.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\ObjectMacros.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\Package.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\PersistentObjectPtr.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\Script.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\SoftObjectPath.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\SoftObjectPtr.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\Stack.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\UnrealType.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\UObjectGlobals.h" />
+    <ClInclude Include="Engine\Runtime\CoreUObject\Public\UObject\WeakObjectPtr.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Algo\Impl\BinaryHeap.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Algo\IntroSort.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Algo\Sort.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Async\Async.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Async\TaskGraphInterfaces.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\Array.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\BitArray.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\ContainerAllocationPolicies.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\ContainersFwd.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\EnumAsByte.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\IndirectArray.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\Map.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\Set.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\SparseArray.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Containers\UnrealString.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Core.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\CoreFwd.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\CoreGlobals.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\CoreMinimal.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\CoreTypes.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatform.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatformAffinity.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatformAtomics.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatformMisc.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatformProcess.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatformStricmp.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\GenericPlatform\GenericPlatformTime.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\Platform.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformAffinity.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformAtomics.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformMath.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformMemory.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformMisc.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformString.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformTime.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PlatformTLS.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\PreprocessorHelpers.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\Runnable.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\RunnableThread.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\ThreadingBase.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\ThreadSafeCounter.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\ThreadSingleton.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\TlsAutoCleanup.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\HAL\UnrealMemory.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Logging\LogCategory.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Logging\LogMacros.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Logging\LogVerbosity.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\Axis.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\Color.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\IntVector.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\NumericLimits.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\Quat.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\Rotator.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\ScalarRegister.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\Transform.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\UnrealMathSSE.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\UnrealMathVectorCommon.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\UnrealMathVectorConstants.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\Vector.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Math\VectorRegister.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Microsoft\MinimalWindowsApi.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\AssertionMacros.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\Char.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\CoreDefines.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\CoreMiscDefines.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\Crc.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\CString.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\EnumClassFlags.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\Guid.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\OutputDevice.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\OutputDeviceConsole.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\OutputDeviceHelper.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Misc\VarArgs.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\AlignmentTemplates.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\AndOrNot.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\AreTypesEqual.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\Casts.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\ChooseClass.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\Decay.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\EnableIf.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\Function.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\HasGetTypeHash.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IdentityFunctor.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\Invoke.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsArithmetic.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsArray.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsArrayOrRefOfTypeByPredicate.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsConstructible.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsEnum.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsEnumClass.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsIntegral.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsInvocable.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsPODType.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsPointer.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsTriviallyCopyAssignable.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsTriviallyCopyConstructible.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsTriviallyDestructible.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\IsValidVariadicFunctionArg.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\Less.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\MemoryOps.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\PointerIsConvertibleFromTo.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\RemoveCV.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\RemoveExtent.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\RemoveReference.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\ReversePredicate.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\Sorting.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\TypeCompatibleBytes.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\TypeHash.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\UnrealTemplate.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Templates\UnrealTypeTraits.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Traits\IsCharEncodingCompatibleWith.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Traits\IsContiguousContainer.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\UObject\NameTypes.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\UObject\UnrealNames.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\UObject\UObjectHierarchyFwd.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\MinimalWindowsApi.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatform.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformAffinity.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformAtomics.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformCodeAnalysis.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformCompilerSetup.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformMisc.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformProcess.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsPlatformTime.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsRunnableThread.h" />
+    <ClInclude Include="Engine\Runtime\Core\Public\Windows\WindowsSystemIncludes.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\DataAsset.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\Engine.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\EngineTypes.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\GameEngine.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\GameInstance.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\Level.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\LocalPlayer.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\Player.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Engine\World.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\Actor.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\Character.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\Controller.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\Info.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\Pawn.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\PlayerController.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\GameFramework\PlayerState.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Classes\Kismet\KismetSystemLibrary.h" />
+    <ClInclude Include="Engine\Runtime\Engine\Public\Engine.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Athena\Player\FortPlayerControllerAthena.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\BuildingPlayerPrimitivePreview.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\FortEngine.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Inventory\FortQuickBars.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Inventory\FortWorldItem.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\ItemDefinitions\FortItem.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Player\FortPlayerController.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Player\FortPlayerControllerGameplay.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Player\FortPlayerControllerPvP.h" />
+    <ClInclude Include="Engine\Runtime\FortniteGame\Public\Player\FortPlayerControllerZone.h" />
+    <ClInclude Include="Engine\Runtime\GameplayTags\Classes\GameplayTag.h" />
+    <ClInclude Include="Engine\Runtime\GameplayTags\Classes\GameplayTagContainer.h" />
+    <ClInclude Include="Engine\Runtime\Online\HTTP\Public\Curl\CurlHttp.h" />
+    <ClInclude Include="vendor\memcury.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{28347ced-1364-4752-97fd-30f44cf16c9a}</ProjectGuid>
+    <RootNamespace>NovaLauncherClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)Engine\Plugins\Runtime\Presidio\Public;$(ProjectDir)Engine\Runtime\ApplicationCore\Public;$(ProjectDir);$(ProjectDir)Engine\Plugins\Runtime\Nova\Public;$(ProjectDir)Engine\Runtime\Online\HTTP\Public;$(ProjectDir)Engine\Runtime\Core\Public;$(ProjectDir)Engine\Runtime\CoreUObject\Public;$(ProjectDir)Engine\Runtime\Engine\Public;$(ProjectDir)Engine\Runtime\Engine\Classes;$(ProjectDir)Engine\Runtime\GameplayTags\Classes;$(ProjectDir)Engine\Runtime\FortniteGame\Public;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)Engine\Plugins\Runtime\Presidio\Public;$(ProjectDir)Engine\Runtime\ApplicationCore\Public;$(ProjectDir);$(ProjectDir)Engine\Plugins\Runtime\Nova\Public;$(ProjectDir)Engine\Runtime\Online\HTTP\Public;$(ProjectDir)Engine\Runtime\Core\Public;$(ProjectDir)Engine\Runtime\CoreUObject\Public;$(ProjectDir)Engine\Runtime\Engine\Public;$(ProjectDir)Engine\Runtime\Engine\Classes;$(ProjectDir)Engine\Runtime\GameplayTags\Classes;$(ProjectDir)Engine\Runtime\FortniteGame\Public;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;NOVALAUNCHERCLIENT_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;STAGING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(TargetDir)*.*" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>;NOVALAUNCHERCLIENT_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(TargetDir)*.*" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Detours.4.0.1\build\native\Detours.targets" Condition="Exists('..\packages\Detours.4.0.1\build\native\Detours.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Detours.4.0.1\build\native\Detours.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Detours.4.0.1\build\native\Detours.targets'))" />
+  </Target>
+</Project>
